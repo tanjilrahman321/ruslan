@@ -1,0 +1,197 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .title {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+
+    /* Header start  */
+    header .logo {
+        width: 98%;
+    }
+
+    /* Header End  */
+
+    /* banner start  */
+    .grid-flip{
+        /* min-height: 400px; */
+    }
+    .bc {
+        padding: 10px;
+        background-color: #ffffffad;
+        width: 85%;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 9999;
+    }
+
+    .bc p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* banner end  */
+
+    /* about start  */
+
+    .about {
+        padding: 50px 0;
+    }
+
+    /* about end  */
+
+    /* who-help start  */
+
+    .who-help {
+        padding: 50px 0;
+    }
+
+    .who-help li {
+        margin: 10px 0;
+        color: #818B92;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /* who-help end  */
+    /* testimonial start  */
+
+    .testimonial {
+        padding: 50px 0;
+        background-color: #DFDFDF;
+    }
+
+    .single-testi {
+        margin: 20px 0;
+    }
+
+    .single-testi p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* testimonial end  */
+
+    .notable {
+        padding: 50px 0;
+    }
+
+    /* notable end  */
+
+    /* disclaimer start  */
+
+    .disclaimer {
+        padding: 50px 0;
+        background-color: #DFDFDF;
+    }
+
+    /* disclaimer end  */
+
+    footer {
+        padding: 50px 0;
+    }
+
+    .footer-bottom {
+        padding: 20px 0;
+    }
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .container {
+        max-width: 750px;
+    }
+
+    header .logo {
+        width: 55%;
+    }
+
+    /* banner start  */
+    .bc {
+        padding: 10px 80px 10px 20px;
+        background-color: #ffffffad;
+        width: 520px;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 9999;
+    }
+
+    .bc p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    /* banner end  */
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    header .logo {
+        width: 45%;
+    }
+
+    /* banner start  */
+    .bc {
+        padding: 10px 80px 10px 20px;
+        background-color: #ffffffad;
+        width: 700px;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 9999;
+    }
+
+    .bc p {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    /* banner end  */
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        max-width: 970px;
+    }
+
+    /* banner start  */
+    .bc {
+        padding: 10px 80px 10px 20px;
+        background-color: #ffffffad;
+        width: 900px;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 9999;
+    }
+
+    .bc p {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    /* banner end  */
+
+}
+
+/*X large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/*XX Large devices (large desktops, 1400px and up)*/
+@media (min-width: 1400px) {}

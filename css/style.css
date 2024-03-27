@@ -1,0 +1,350 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* Fonts  */
+/* font-family: "PT Sans", sans-serif; */
+/* font-family: "Roboto Slab", serif; */
+
+body {
+    font-family: "Roboto Slab", serif;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+/* Banner start  */
+
+.banner {}
+
+.banner-img {
+    padding: 0 25px 35px 25px;
+    display: flex !important;
+    align-items: end;
+    min-height: 450px;
+    background-image: url(../images/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-content {
+    padding: 10px 80px 10px 20px;
+    background-color: #ffffffad;
+}
+
+.banner-content p {
+    font-family: "PT Sans", sans-serif;
+    color: #437493;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+
+.bc{
+    padding: 10px 80px 10px 20px;
+    background-color: #ffffffad;
+    width: 1100px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+.bc p{
+    font-family: "PT Sans", sans-serif;
+    color: #437493;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+
+/* Banner end  */
+
+/* about start  */
+
+.title {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 36px;
+    color: #437493;
+}
+
+.about {
+    padding: 70px 0;
+}
+
+.about P {
+    color: #818B92;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/* about end  */
+
+/* who-help start  */
+
+.who-help {
+    padding: 70px 0;
+    background-color: #DFDFDF;
+}
+
+.who-help li {
+    margin: 15px 0;
+    color: #818B92;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/* who-help end  */
+
+/* practice start  */
+
+.practice {
+    padding: 70px 0;
+}
+
+.practice h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #303440;
+    font-weight: 400;
+}
+
+.practice li {
+    margin: 10px 0;
+    color: #818B92;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+/* practice end  */
+
+/* testimonial start  */
+
+.testimonial {
+    padding: 70px 0;
+    background-color: #DFDFDF;
+}
+
+.single-testi {
+    margin: 30px 0;
+}
+
+.single-testi p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+/* testimonial end  */
+
+/* notable start  */
+
+.notable {
+    padding: 70px 0;
+}
+
+.notable li {
+    margin: 10px 0;
+    color: #818B92;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+/* notable end  */
+
+/* disclaimer start  */
+
+.disclaimer {
+    padding: 70px 0;
+    background-color: #DFDFDF;
+}
+
+.sub-title {
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #303440;
+    font-size: 24px;
+}
+
+.disclaimer P {
+    color: #818B92;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/* disclaimer end  */
+
+/* footer start  */
+
+footer {
+    background-color: #303440;
+    padding: 70px 0;
+}
+
+footer h2 {
+    color: #717580;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400 !important;
+    margin-bottom: 25px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #437493;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer span {
+    font-weight: 500;
+    color: #437493;
+    transition: 0.3s;
+}
+
+footer span:hover {
+    color: #fff;
+}
+
+/* footer end  */
+
+.footer-bottom {
+    border-top: 1px solid #515560;
+    padding: 50px 0;
+    background-color: #303440;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* Splitting  */
+
+
+
+.splitting {
+    background-color: black;
+}
+
+.splitting .cell,
+.splitting .cell__inner,
+.splitting img {
+    transition: transform 1s cubic-bezier(0.63, 0.01, 0.07, 0.99), opacity 1s linear;
+    /* No animation on leave */
+    transition-delay: calc(0.1s * var(--cell-index));
+    /* Reverse the animation */
+    transition-delay: calc(0.1s * (var(--cell-total) - var(--cell-index)));
+}
+
+.splitting img {
+    transform: scale(0.8);
+    transition-delay: 0s;
+    visibility: visible;
+    opacity: 0;
+}
+
+.splitting:hover .cell,
+.splitting:hover .cell__inner {
+    transition-delay: calc(0.1s * var(--cell-index));
+}
+
+.splitting:hover img {
+    opacity: 0.99;
+    transform: scale(1);
+    transition-delay: calc(0.1s * var(--cell-total));
+}
+
+.horiz-slide:hover .cell {
+    transform: translateX(100%);
+}
+
+.horiz-slide-left:hover .cell {
+    transform: translateX(-100%);
+}
+
+.vert-slide:hover .cell {
+    transform: translateY(100%);
+}
+
+.horiz-slide.\-fixed:hover .cell__inner {
+    transform: translateX(-100%);
+}
+
+.vert-slide.\-fixed:hover .cell__inner {
+    transform: translateY(-100%);
+}
+
+.grid-fade:hover .cell {
+    opacity: 0;
+}
+
+.grid-flip {
+    perspective: 600px;
+    transform-style: preserve-3d;
+}
+
+.grid-flip img {
+    transform: scale(1, 1);
+}
+
+.grid-flip:hover .cell {
+    transform: rotateX(-180deg);
+    opacity: 0;
+}
+
+.teeth .cell,
+.teeth img {
+    transition-duration: 1s;
+}
+
+.teeth:hover .cell {
+    transform: translateY(100%);
+}
+
+.teeth:hover .cell:nth-child(even) {
+    transform: translateY(-100%);
+}
+
+.empty-split {
+    padding-top: 100%;
+}
+
+.empty-split:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: visible;
+}
+
